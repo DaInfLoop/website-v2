@@ -150,6 +150,10 @@ main .right div.text div span {
     gap: 12px;
 }
 
+.project a {
+    display: block;
+}
+
 .project {
     display: flex;
     padding: 12px;
@@ -159,13 +163,13 @@ main .right div.text div span {
 
     border-radius: 12px;
     background-color: #337248;
-
-    /*height: 230px;*/
+    text-decoration: none; /* Add this line to remove underline from links */
+    color: inherit; /* Add this line to inherit text color */
     width: 100%;
 }
 
-.project:has(href):hover {
-    cursor: pointer;
+.project:hover {
+    background-color: #285a36; /* Optional: Add a hover effect */
 }
 
 .project .left {

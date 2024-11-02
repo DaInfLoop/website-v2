@@ -47,7 +47,7 @@
                     <br><br>Here's some examples of projects I've made. Click them to view their Git repository!</span>
             </div>
             <div id="section-3" class="projects">
-                <div class="project" href="https://github.com/DaInfLoop/sprig-cli">
+                <a class="project" href="https://github.com/DaInfLoop/sprig-cli">
                     <div class="left">
                         <span class="project-title">sprig CLI</span>
                         <img class="project-image" src="assets/sprig-cli-preview.png" alt="sprig CLI preview" />
@@ -61,23 +61,20 @@
                             <span>made for Hack Club's High Seas</span>
                         </div>
                     </div>
-                </div>
-                <div class="project" href="https://git.haroon.hackclub.app/">
+                </a>
+                <a class="project" href="https://git.haroon.hackclub.app/haroon/Battler-Generator">
                     <div class="left">
                         <span class="project-title">Battler Generator</span>
-                        <img class="project-image" src="assets/battler-gen-preview.png"
-                            alt="Battler Generator preview" />
+                        <img class="project-image" src="assets/battler-gen-preview.png" alt="Battler Generator preview" />
                     </div>
                     <div class="right">
                         <span class="project-description">The Battler Generator hosts all assets for Battle Master's
-                            Battler
-                            shop! It allows players to customize their very own Battler (character), and view them on
-                            their
-                            profiles, in battle against an AI opponent or another player!
+                            Battler shop! It allows players to customize their very own Battler (character), and view them on
+                            their profiles, in battle against an AI opponent or another player!
                             <br><br><i>Bringing turn based combat to your Discord server</i></span>
                     </div>
-                </div>
-                <div class="project">
+                </a>
+                <a class="project" href="https://github.com/DaInfLoop/osu-leaderboard">
                     <div class="left">
                         <span class="project-title">osu! slack</span>
                         <img class="project-image" src="assets/osu-slack-preview.png" alt="osu! slack preview" />
@@ -85,17 +82,15 @@
                     <div class="right">
                         <span class="project-description">Around the time of Arcade, I got into this funny rhythm game
                             called osu. I even got a drawing tablet just to play the game better. So I decided, why not
-                            make
-                            a fun bot out of it?
+                            make a fun bot out of it?
                             <br><br>It has account linking, leaderboards, multiplayer support and shows the daily
-                            challenge
-                            everyday!</span>
+                            challenge everyday!</span>
                         <div class="project-reason">
                             <img src="assets/arcade-logo.png" width="119px" height="26px" />
                             <span>made for Hack Club's Arcade</span>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
         <div class="right">
@@ -140,7 +135,7 @@
                         <span class="image-credits">(artwork by Homeannor)</span>
                     </div>
                     <div class="right">
-                        <span class="project-description">ABattle Master Universe is a Discord server I have been and
+                        <span class="project-description">Battle Master Universe is a Discord server I have been and
                             moderated since the dawn of my career. It initially started as a support server for a
                             Discord bot called Houseannor, before transforming into a game development server for
                             Homeannor's games, before transforming back into a Discord bot support + community server
@@ -165,14 +160,5 @@
         <span>&copy; 2024 DaInfLoop</span>
     </footer>
 </body>
-<script>
-    document.querySelectorAll('.project').forEach(project => {
-        project.addEventListener('click', () => {
-            if (project.getAttribute('href')) {
-                window.open(project.getAttribute('href'), '_blank');
-            }
-        });
-    });
-</script>
 
 </html>
