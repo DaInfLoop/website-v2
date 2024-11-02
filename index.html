@@ -161,9 +161,18 @@
         </div>
     </main>
     <footer>
-        <img src="assets/blahaj.png" alt="hidden blahaj"/>
+        <img src="assets/blahaj.png" alt="hidden blahaj" />
         <span>&copy; 2024 DaInfLoop</span>
     </footer>
 </body>
+<script>
+    document.querySelectorAll('.project').forEach(project => {
+        project.addEventListener('click', () => {
+            if (project.getAttribute('href')) {
+                window.open(project.getAttribute('href'), '_blank');
+            }
+        });
+    });
+</script>
 
 </html>

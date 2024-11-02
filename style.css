@@ -164,6 +164,10 @@ main .right div.text div span {
     width: 100%;
 }
 
+.project:has(href):hover {
+    cursor: pointer;
+}
+
 .project .left {
     display: flex;
     flex-direction: column;
