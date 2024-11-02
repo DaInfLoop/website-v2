@@ -77,68 +77,33 @@ code {
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 48px;
+    gap: 18px;
+    padding: 48px;
     width: 100%;
 }
 
-main .left {
-    display: flex;
-    padding: 24px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 18px;
-    width: 50%
-}
-
-main .left div {
+main div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
 }
 
-main .left div.text div {
+main div.text div {
     display: flex;
     align-items: center;
     flex-direction: row;
     gap: 12px;
 }
 
-main .left div#section-1 div img {
+main div#section-1 div img {
     width: 48px;
     height: 48px;
 }
 
-main .left div.text div span {
-    font-weight: 700;
-    font-size: 32px;
-}
-
-main .right {
-    display: flex;
-    padding: 24px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 18px;
-    width: 50%;
-}
-
-main .right div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-}
-
-main .right div.text div {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 12px;
-}
-
-main .right div.text div span {
+main div.text div span {
     font-weight: 700;
     font-size: 32px;
 }
@@ -162,14 +127,20 @@ main .right div.text div span {
     gap: 12px;
 
     border-radius: 12px;
-    background-color: #337248;
+    background-color: #2E3A45;
     text-decoration: none; /* Add this line to remove underline from links */
     color: inherit; /* Add this line to inherit text color */
     width: 100%;
 }
 
+@media (max-width: 1000px) {
+    .project {
+        flex-direction: column !important;
+    }
+}
+
 .project:hover {
-    background-color: #285a36; /* Optional: Add a hover effect */
+    background-color: #3A4A55; /* Optional: Add a hover effect */
 }
 
 .project .left {
@@ -188,6 +159,7 @@ main .right div.text div span {
     height: 100%;
 
     min-height: 100%;
+    padding: 8px;
 }
 
 .project-title {
