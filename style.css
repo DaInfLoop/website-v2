@@ -133,12 +133,6 @@ main div.text div span {
     width: 100%;
 }
 
-@media (max-width: 1000px) {
-    .project {
-        flex-direction: column !important;
-    }
-}
-
 .project:hover {
     background-color: #3A4A55; /* Optional: Add a hover effect */
 }
@@ -207,4 +201,32 @@ footer img {
 footer span {
     font-size: 16px;
     font-weight: 400;
+}
+
+@media (max-width: 1000px) {
+    .project {
+        flex-direction: column !important;
+    }
+
+    .project-title {
+        font-size: 32px;
+    }
+
+    .project-description {
+        font-size: 24px;
+    }
+
+    span {
+        font-size: 24px;
+    }
+
+    footer img {
+        height: 48px;
+        width: auto;
+    }
+    
+    footer span {
+        font-size: 24px;
+        font-weight: 400;
+    }
 }
