@@ -131,6 +131,7 @@ main div.text div span {
     text-decoration: none; /* Add this line to remove underline from links */
     color: inherit; /* Add this line to inherit text color */
     width: 100%;
+    transition: background-color 0.3 ease;
 }
 
 .project:hover {
